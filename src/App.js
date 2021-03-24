@@ -16,12 +16,12 @@ export default class App extends Component {
 				<Router>
 					<Navbar />
 					<Switch>
-						<Route path="/account">
+						<Route path="/fletes/account">
 							<Account tipoNav="izquierda" />
 						</Route>
-						<Route path="/insert_record" component={InsertRecord} />
-						<Route path="/" component={Index} exact />
-						<Route path="/login" tipoNav="arriba" component={Login} />
+						<Route path="/fletes/insert_record" component={InsertRecord} />
+						<Route path="/fletes/login" tipoNav="arriba" component={Login} />
+						<Route path="/fletes" component={Index} exact />
 					</Switch>
 				</Router>
 			</div>

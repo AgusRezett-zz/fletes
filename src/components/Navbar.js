@@ -28,25 +28,25 @@ export default function Navbar() {
 			<img src={logo} alt="brand-logo" />
 			<ul>
 				<li title="Insertar registro">
-					<Link to="/insert_record">
+					<Link to="/fletes/insert_record">
 						{direction !== "vertical" ? "Insertar registro" : null}
 						<FontAwesomeIcon className="icon" icon={faPlus} />
 					</Link>
 				</li>
 				<li title="Mostrar registros">
-					<Link to="/">
+					<Link to="/fletes">
 						{direction !== "vertical" ? "Mostrar Registros" : null}
 						<FontAwesomeIcon className="icon" icon={faListUl} />
 					</Link>
 				</li>
 				<li>
-					<Link to="/login">
+					<Link to="/fletes/login">
 						{direction !== "vertical" ? "Iniciar sesión" : null}
 						<FontAwesomeIcon className="icon" icon={faUser} />
 					</Link>
 				</li>
 				<li title="Configuración de perfil">
-					<Link to="/account">
+					<Link to="/fletes/account">
 						{direction !== "vertical" ? "Cuenta" : null}
 						<FontAwesomeIcon className="icon" icon={faUser} />
 					</Link>
