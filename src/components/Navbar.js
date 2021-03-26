@@ -14,7 +14,7 @@ export default function Navbar() {
 	function HeaderView() {
 		let location = useLocation();
 
-		if (location.pathname === "/account") {
+		if (location.pathname === "/fletes/account") {
 			setDirection("vertical");
 		} else {
 			setDirection("horizontal");
