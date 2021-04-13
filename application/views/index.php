@@ -21,6 +21,7 @@
 				<li title="Insertar registro">
 					<a href="insertrecord.php">
 						Insertar registro
+						actualizar
 						<i class="fas fa-plus"></i>
 					</a>
 				</li>
