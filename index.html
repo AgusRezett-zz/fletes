@@ -1,0 +1,93 @@
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Inicio</title>
+	</head>
+
+	<body id="body">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#body">Position relative</a></li>
+					<li><a href="#display">Display</a></li>
+					<li><a href="#absolute">Position absolute</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div id="relative" class="card">
+				<div class="text">
+					<h1>Position relative</h1>
+					<p>
+						Cuando posicionamos un elemento con un valor relativo, nos estamos refiriendo a que, en
+						<b>primera instancia</b>, este se posicionará en relación al <b>flujo normal</b> del documento y al momento
+						de ser <b>desplazado</b> (ya sea con paddings, margins, propiedades transform, etc) se posicionará en
+						relación a sí mismo, es decir, <b>no afecta</b> al flujo del documento. <br />
+						En este ejemplo el círculo morado tiene un posicionamiento relativo, lo que significa que su espacio está
+						reservado dentro del flujo del documento, donde por más que su posicionamiento cambie, este último no se
+						verá afectado.
+					</p>
+				</div>
+				<div class="example">
+					<div class="first-circle circle"></div>
+					<div class="second-circle circle"></div>
+					<div class="third-circle circle"></div>
+					<p>Hover me</p>
+				</div>
+			</div>
+			<div id="display" class="card" style="margin-top: 50px">
+				<div class="text" style="width: 60%">
+					<h1>Display</h1>
+					<p style="line-height: 32px">
+						La propiedad display asigna el tipo de visualización de un elemento, modificando su comportamiento en el DOM
+						en cuanto al flujo se refiere. Estos dos valores vistos (block e inline) alteran el tamaño que adopta el
+						elemento. Como sus nombres lo indican, el valor block especifica el tamaño de bloque, y el valor inline un
+						tamaño en linea; siendo este primero un elemento que utiliza todo el ancho de la pantalla para mostrar el
+						elemento, mientras que el segundo se adapta al tamaño pertinente del elemento permitiendo mostrar varios de
+						ellos en fila. Así mismo, el valor none remueve toda relación con el elemento (incluyendo su espacio
+						reservado), es por eso que una alternativa a este valor es la propiedad visibility, capaz de únicamente
+						cambiar su visualización.
+					</p>
+				</div>
+				<div class="example absolute" style="width: 20% !important">
+					<div class="first-circle-dsp circle circle-block"></div>
+					<div class="second-circle-dsp circle circle-block"></div>
+					<div class="third-circle-dsp circle circle-block"></div>
+					<p>block</p>
+				</div>
+				<div class="example absolute" style="width: 20% !important; left: 80%">
+					<div class="first-circle-dsp circle circle-inline"></div>
+					<div class="second-circle-dsp circle circle-inline"></div>
+					<div class="third-circle-dsp circle circle-inline"></div>
+					<p>inline</p>
+				</div>
+			</div>
+			<div id="absolute" class="card" style="margin-top: 50px">
+				<div class="text">
+					<h1>Position absolute</h1>
+					<p>
+						Cuando posicionamos un elemento con un valor absoluto, este <b>no</b> adopta un posicionamiento de acuerdo
+						al <b>flujo normal del documento</b>, al contrario, <b>ningún espacio</b> <b>es reservado</b> para él
+						logrando ser posicionado con los valores de top, left, bottom y right. Su posicionamiento es
+						<b>relativo al de su ancestro</b>, o, en el caso de que no se encuentre uno, al
+						<b>contenedor más cercano</b>. <br />
+						En este ejemplo el círculo morado toma una posición absoluta, eliminando su espacio reservado en el flujo.
+					</p>
+				</div>
+				<div class="example absolute">
+					<div class="first-circle-abs circle"></div>
+					<div class="second-circle-abs circle"></div>
+					<div class="third-circle-abs circle"></div>
+					<p>Hover me</p>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
