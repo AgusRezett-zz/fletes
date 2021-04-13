@@ -19,25 +19,25 @@
 			<img src="./assets/logo.png" alt="brand-logo" />
 			<ul>
 				<li title="Insertar registro">
-					<a href="insertrecord.html">
+					<a href="insertrecord.php">
 						Insertar registro
 						<i class="fas fa-plus"></i>
 					</a>
 				</li>
 				<li title="Mostrar registros">
-					<a href="index.html">
+					<a href="index.php">
 						Mostrar Registros
 						<i class="fas fa-list-ul"></i>
 					</a>
 				</li>
 				<li>
-					<a href="login.html">
+					<a href="login.php">
 						Iniciar sesión
 						<i class="fas fa-user"></i>
 					</a>
 				</li>
 				<li title="Configuración de perfil">
-					<a href="account.html">
+					<a href="account.php">
 						Cuenta
 						<i class="fas fa-user"></i>
 					</a>
