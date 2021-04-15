@@ -1,0 +1,28 @@
+{
+  "homepage": "https://agusrezett.github.io/fletes/",
+  "name": "fletes",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "scripts": {
+    "deploy": "gh-pages"
+  },
+  "eslintConfig": {
+    "extends": [
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
