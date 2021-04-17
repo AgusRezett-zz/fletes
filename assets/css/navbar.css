@@ -41,6 +41,7 @@
 	align-items: center;
 	color: #00a4b6;
 	transition: all 150ms ease-in-out;
+	text-decoration: none;
 }
 .vertical ul li a .fas {
 	font-size: 20px;

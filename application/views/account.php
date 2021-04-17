@@ -2,41 +2,41 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="http://localhost:8080/fletes/assets/favicon.ico" />
+		<link rel="icon" href="<?= base_url() ?>assets/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="theme-color" content="#000000" />
 		<meta name="description" content="Web site created using create-react-app" />
 		<title>Fletes</title>
 
-		<link rel="stylesheet" href="http://localhost:8080/fletes/assets/css/App.css" />
-		<link rel="stylesheet" href="http://localhost:8080/fletes/assets/css/navbar.css" />
-		<link rel="stylesheet" href="http://localhost:8080/fletes/assets/css/account.css" />
-		<link rel="stylesheet" href="http://localhost:8080/fletes/assets/css/login.css" />
+		<link rel="stylesheet" href="<?= base_url() ?>assets/css/App.css" />
+		<link rel="stylesheet" href="<?= base_url() ?>assets/css/navbar.css" />
+		<link rel="stylesheet" href="<?= base_url() ?>assets/css/account.css" />
+		<link rel="stylesheet" href="<?= base_url() ?>assets/css/login.css" />
 
 		<script src="https://kit.fontawesome.com/9ef2b94efc.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
 		<nav class="vertical">
-			<img src="http://localhost:8080/fletes/assets/logo.png" alt="brand-logo" />
+			<img src="<?= base_url() ?>assets/logo.png" alt="brand-logo" />
 			<ul>
 				<li title="Insertar registro">
-					<a href="insertrecord.html">
+					<a href="<?= base_url() ?>index.php/insert">
 						<i class="fas fa-plus"></i>
 					</a>
 				</li>
 				<li title="Mostrar registros">
-					<a href="index.html">
+					<a href="<?= base_url() ?>index.php/inicio">
 						<i class="fas fa-list-ul"></i>
 					</a>
 				</li>
 				<li>
-					<a href="login.html">
+					<a href="<?= base_url() ?>index.php/login">
 						<i class="fas fa-user"></i>
 					</a>
 				</li>
 				<li title="Configuración de perfil">
-					<a href="account.html">
+					<a href="<?= base_url() ?>index.php/cuenta">
 						<i class="fas fa-user"></i>
 					</a>
 				</li>

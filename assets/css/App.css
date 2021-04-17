@@ -3,7 +3,7 @@
 .App {
 	width: 100%;
 	height: 100vh;
-	background-image: url(../assets/rosario_bsas.jpg);
+	background-image: url(http://localhost/fletes/assets/rosario_bsas.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -47,4 +47,30 @@
 .App .tg .tg-0lax {
 	text-align: center;
 	vertical-align: center;
+}
+
+.tg-0lax a {
+	cursor: default;
+}
+
+.tg-0lax a i {
+	margin: 0px 10px;
+	transition: all 100ms ease-in-out;
+	cursor: pointer;
+}
+
+.tg-0lax a .fa-trash {
+	color: #8a0000;
+}
+
+.tg-0lax a .fa-trash:hover {
+	color: #e90000;
+}
+
+.tg-0lax a .fa-pen {
+	color: #008200;
+}
+
+.tg-0lax a .fa-pen:hover {
+	color: #00dd00;
 }

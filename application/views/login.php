@@ -1,3 +1,11 @@
+<?php 
+	session_start();
+	if (isset($_SESSION['usuario'])){
+		header("Location:".base_url()."index.php/inicio");
+		die();
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -12,8 +20,7 @@
 		<link rel="stylesheet" href="<?= base_url() ?>assets/css/navbar.css" />
 		<link rel="stylesheet" href="<?= base_url() ?>assets/css/login.css" />
 
-		<script src="https://kit.fontawesome.com/9ef2b94efc.js" crossorigin="anonymous"></script>
-		<script src="<?= base_url() ?>assets/js/UserOptionBtn.js"></script>
+		<script src="https://kit.fontawesome.com/9ef2b94efc.js" crossorigin="anonymous"></script>		
 	</head>
 
 	<body>
@@ -21,26 +28,20 @@
 			<img src="<?= base_url() ?>assets/logo.png" alt="brand-logo" />
 			<ul>
 				<li title="Insertar registro">
-					<a href="insertrecord.html">
+					<a href="<?= base_url() ?>index.php/insert">
 						Insertar registro
 						<i class="fas fa-plus"></i>
 					</a>
 				</li>
 				<li title="Mostrar registros">
-					<a href="index.html">
+					<a href="<?= base_url() ?>index.php/inicio">
 						Mostrar Registros
 						<i class="fas fa-list-ul"></i>
 					</a>
 				</li>
 				<li>
-					<a href="login.html">
+					<a href="<?= base_url() ?>index.php/login">
 						Iniciar sesión
-						<i class="fas fa-user"></i>
-					</a>
-				</li>
-				<li title="Configuración de perfil">
-					<a href="account.html">
-						Cuenta
 						<i class="fas fa-user"></i>
 					</a>
 				</li>
@@ -52,27 +53,32 @@
 					<div class="brand-img"></div>
 					<div class="form-container">
 						<div class="formulario">
-							<form>
+							<form action="">
 								<div class="button-options-container">
-									<div class="div-btn selected-ub" id="userOptionLogin" onclick="focusBtn(id)">
-										Entrar
+									<div class="div-btn selected-ub" id="userOptionLogin">
+										Iniciar sesión
 									</div>
-									<div class="div-btn" id="userOptionRegister" onclick="focusBtn(id)">
+								</div>
+								<input class="inputUserData" type="email" placeholder="Dirección de email"></input>
+								<input class="inputUserData" type="password" placeholder="Contraseña"></input>
+								<div class="ApiLog btnEntrar">
+									Ingresar
+								</div>
+							</form>
+
+							<form action="<?= base_url() ?>index.php/Crud/registerUser" method="post">
+								<div class="button-options-container">
+									<div class="div-btn" id="userOptionRegister">
 										Regístrate
 									</div>
 								</div>
 								<div class="inputForm" id="nameForm">
-									<input class="inputUserData" type="text" placeholder="Nombre"></input>
-									<input class="inputUserData" type="text" placeholder="Apellido"></input>
+									<input class="inputUserData" type="text" name="nombre" placeholder="Nombre"></input>
+									<input class="inputUserData" type="text" name="apellido" placeholder="Apellido"></input>
 								</div>
-								<input class="inputUserData" type="email" placeholder="Dirección de email"></input>
-								<input class="inputUserData" type="password" placeholder="Contraseña"></input>
-								<div class="forgetPsw" id="forgotPsw">
-									¿Olvidaste tu contraseña?
-								</div>
-								<div class="ApiLog btnEntrar">
-									Entrar
-								</div>
+								<input class="inputUserData" type="email" name="correo" placeholder="Dirección de email"></input>
+								<input class="inputUserData" type="password" name="password" placeholder="Contraseña"></input>
+								<input type="submit" name="save" value="Registrarse" class="ApiLog btnEntrar"></input>
 							</form>
 						</div>
 					</div>
