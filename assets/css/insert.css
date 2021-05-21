@@ -46,7 +46,8 @@
 .input-forms .formulario input:focus {
 	background-color: #3c5c5e;
 }
-.input-forms button {
+.input-forms input[type="submit"],
+.input-forms input[type="reset"] {
 	text-shadow: 0px 0px 4px black;
 	width: 40%;
 	height: 45px;
